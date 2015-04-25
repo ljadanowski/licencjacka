@@ -1,0 +1,152 @@
+\documentclass[12pt,a4paper,notitlepage,oneside]{article}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[cp1250]{inputenc}
+\usepackage{graphicx}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\makeatletter
+\newcommand{\linia}{\rule{\linewidth}{0.4mm}}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+%\chapter{Analiza podobnych projektów}
+\section{spoj.pl}
+
+SPOJ jest serwisem typu Online judge umo¿liwiaj¹cym sprawdzenie swoich umiejêtnoœci programistycznych poprzez rozwi¹zywanie problemów. Serwis zawiera szereg problemów ró¿nej trudnoœci, które mo¿na rozwi¹zaæ w ró¿nych jêzykach programowania. Rozwi¹zaniem jest kod Ÿród³owy programu napisanego w wybranym jêzyku programowania. Odpowiedzi wysy³a siê do serwisu poprzez specjalny formularz.
+
+Do rozwi¹zania jest ponad 8000 problemów sformu³owanych m.in. w jêzykach: polskim, angielskim, portugalskim i po wietnamsku. Mo¿na wysy³aæ kody Ÿród³owe w 55 jêzykach programowania, jest mo¿liwoœæ organizowania w³asnych konkursów.
+
+SPOJ jest u¿ywany do prowadzenia zajêæ dydaktycznych z programowania i algorytmiki jako narzêdzie do wstêpnej, automatycznej oceny programów oraz do przeprowadzenia konkursów, w tym rekrutacyjnych.
+
+
+\section{codeschool}
+CodeSchool naucza technologi webowych w komfortowy sposób, czyli przez nasz¹ przegl¹darkê. Na stronie s¹ dostêpne lekcje wideo oraz konkursy programistyczne i inne wyzwania. To sprawia, ¿e nauka programowania staje siê przyjemna.
+
+
+\section{topcoder}
+TopCoder to amerykañska firma zajmuj¹ca siê organizacj¹ konkursów programistycznych.
+
+TopCoder ocenia swoich zawodników, przyznaj¹c im punkty rankingowe, wyliczane m. in. na podstawie osi¹ganych wyników i czêstotliwoœci uczestnictwa w konkursach. Na podstawie ratingu zawodnicy zostali podzieleni na dwie dywizje: do pierwszej z nich nale¿¹ ci, których rating przekroczy³ 1200 punktów, do drugiej kwalifikuj¹ siê pozostali.
+
+
+%\chapter{Funkcjonalnoœæ}
+\section{Podstawowy opis projektu}
+
+Nowoczesne technologie wymag¹j¹ nowoczesnych metod uczenia, które w niebanalny sposób
+zmieni¹ podejœcie do nauki. Czêsto m³odzi ludzie (licealiœci) s¹ zniechêceni uczeniem siê nowych
+technologii, gdy¿ muszê przedzieraæ siê przez nudne manuale. Naszym projektem chcieliœmy
+zmieniæ, pokazaæ now¹ drogê jak¹ mo¿e iœæ edukacja. A mianowicie kurs programowania z baz¹
+danych pe³n¹ zadañ do samodzielnej pracy. Nasze podejœcie i inowacyjnoœæ projektu polega na
+interaktywoœci – uczeñ dostajê natychmiastow¹ informacjê zwrotn¹ o rezultach nauki. Informacja
+zwrotna zawiera czas wykonania programu, ocenê obliczan¹ na podstawie wykonania programu.
+Nasz program jest w postaci aplikacji internetowej, do której dostêp bêdê miali dostêp wszyscy do
+pod³¹czeni do sieci. Celem aplikacji jest dostarczenie wygodnych i ciekawych sposób nauki w
+jêzyku programowania C++. Kurs bêdzie podzielony na lekcjê, którê wraz z zadaniami bêdê
+twoczyæ pe³n¹ ca³oœæ. Taka czêœæ kursu mo¿e byæ oceniana i stanowiæ ocenê cz¹stkow¹ ca³ego
+zadania, z których mo¿na wystawiæ ocene z ca³oœci kursu.
+
+\section{Wymagania funkcjonalne}
+
+\begin{itemize}
+\item u¿ytkownik posiada konto w serwisie
+\item u¿ytkownik posiada podstronê, na której znajduj¹ siê informacjê o nim, jak i dotyczasowe 
+osi¹gniêcia w nauce, statystyki, informacje kontaktowe
+\item u¿ytkownik mo¿e dodawaæ swoje zadania z serwisu
+\item u¿ytkownilk mo¿e modyfikowaæ swoje zadania w serwisie
+\item u¿ytkownik mo¿ê kasowaæ swoje zadania w serwisie
+\item u¿ytkownik mo¿e wysy³aæ swoje zadania w celu sprawdzenia
+\item u¿ytkownik mo¿e zostaæ administratorem serwisu, nabywaæ w ten sposób wiêcej praw do
+zarz¹dzania
+\item u¿ytkownik dodaj¹cy zadania do serwisu mo¿e nak³ada ograniczenia na wykonywanie
+zadanie; ograniczenia mog¹ byæ takie jak czas, pamiêæ, dane wejœciowe
+\item administator mo¿e dodawaæ nowe zadania do serwisu
+\item administator mo¿e modyfikowaæ wszystkie zadania w serwisie
+\item administrator mo¿e kasowaæ wszystkie zadania w serwisie
+\item u¿ytkownik mo¿e siê rejestrowaæ w serwisie
+\item u¿ytkownik aby wykonaæ zadanie jest potrzebne konto w serwisie
+\item ka¿dy u¿ytkownik ma dostêp do kursu
+\item ka¿dy kurs jest podzielony na lekcjê (modu³y), którê koñcz¹ siê testem/zadaniem
+\item w serwisie jest dostêpny ranking najlepszych programistówur
+\item u¿ytkownik ma prawo do dodawania komentarzy pod zadaniem oraz pod lekcjê w kursie
+\item u¿ytkownik mo¿e skasowaæ swoje konto w serwisie
+\item u¿ytkownik mo¿e posiadaæ na swojej podstronie informacjê o sobie; np. adres email, strone
+www, szko³ê, ulubiony jêzyk programowania, avatar
+\item strona posiada formularz kontaktowy do administratora(ów)
+\item zadania w serwisie s¹ podzielone na poziomy trudnoœci np. ³atwe, œrednie, trudne
+\item niezarejestrowany u¿ytkownik bêd¹c na stronie startowej widzi tylko pierwsz¹ lekcjê kursu,
+dopiero po rejestracji ma dostêp do pe³nego kursu
+\end{itemize}
+
+\section{Wymagania niefunkcjonalne}
+
+%=================================================================
+%tutaj dopisac.....................................................
+%=================================================================
+
+
+
+%\chapter{Implementacja projektu}
+\section{Zastosowane technologie}
+W naszym projekcie zastosowaliœmy nastêpuj¹ce technologie:
+
+\begin{itemize}
+\item Ruby 2.2
+\item Ruby on Rails 4.2.0
+\item Javascript
+\item HTML5/CSS3
+\item Postgresql
+\end{itemize}
+
+
+\textbf{Ruby} interpretowany, w pe³ni obiektowy i dynamicznie typowany jêzyk programowania stworzony w 1995 roku przez Yukihiro Matsumoto.
+
+Ruby bazuje na wielu jêzykach, takich jak CLU, Eiffel, Lisp, Perl, Python czy Smalltalk. Sk³adnia jest zorientowana liniowo i oparta na sk³adni CLU oraz, w mniejszym stopniu, Perla.
+
+Ruby posiada:
+\begin{itemize}
+\item automatyczne odœmiecanie pamiêci 
+\item iteratory
+\item przeci¹¿anie operatorów (ang. operator overloading)
+\item normalne i zaawansowane w³aœciwoœci zorientowania obiektowego (klasa, metoda ...)
+\item obs³uga wyj¹tków (ang. exception handling)
+\item wyra¿enia regularne wbudowane w sk³adniê
+\item liczby ca³kowite o dowolnych rozmiarach
+\item dodawanie metod do instancji klasy - mo¿liwa jest zmiana lub dodanie metody do instancji danej klasy
+\item bloki i lambdy (closures) - wygodne przekazywanie funkcji jako parametrów
+\item "Duck typing" - rozpoznawanie typów na podstawie ich zachowania, a nie deklaracji
+\item modu³y - rodzaj wielodziedziczenia pozwalaj¹cy w³¹czyæ gotow¹ implementacjê zbioru metod do danej klasy
+\item mo¿liwoœæ zmiany praktycznie wszystkiego - dodanie dodatkowych metod do klasy Array, czy zmiana sposobu drukowania liczb ca³kowitych s¹ niezmiernie proste.
+\item zmienne leksykalne modyfikowalne w czasie dzia³ania programu
+\item Programy pisane w Ruby charakteryzuj¹ siê wysok¹ przenoœnoœci¹ pomiêdzy platformami (istniej¹ implementacje na wiele systemów Uniksowych, DOS, Windows, OS X, BeOS itd.).
+
+Ruby jest rozwijany jako otwarte oprogramowanie i dostêpny na licencji GPL oraz na w³asnej licencji wymagaj¹cej zmiany nazw plików wykonywalnych w przypadku zamkniêcia kodu.
+\end{itemize}
+
+
+\textbf{Ruby on Rails} framework open source do szybkiego tworzenia aplikacji webowych stworzony g³ównie przez duñskiego programistê Davida Heinemeiera Hanssona w ramach pracy nad oprogramowaniem Basecamp. RoR zosta³ napisany w jêzyku Ruby z u¿yciem architektury MVC (ang. Model-View-Controller).
+
+
+\textbf{JavaScript} skryptowy jêzyk programowania, stworzony przez firmê Netscape, najczêœciej stosowany na stronach internetowych. 
+Najczêœciej spotykanym zastosowaniem jêzyka JavaScript s¹ strony WWW. Skrypty s³u¿¹ najczêœciej do zapewnienia interaktywnoœci poprzez reagowanie na zdarzenia, sprawdzania poprawnoœci formularzy lub budowania elementów nawigacyjnych. Skrypty JavaScriptu uruchamiane przez strony internetowe maj¹ znacznie ograniczony dostêp do komputera u¿ytkownika.
+\section{Modele, relacje i schematy}
+\section{Ewolucja systemu}
+
+\textbf{HTML} (ang. HyperText Markup Language) – hipertekstowy jêzyk znaczników, obecnie szeroko wykorzystywany do tworzenia stron internetowych.
+
+\textbf{CSS} (ang. Cascading Style Sheets, w skrócie CSS) to jêzyk s³u¿¹cy do opisu formy prezentacji (wyœwietlania) stron WWW.
+Arkusz stylów CSS to lista dyrektyw (tzw. regu³) ustalaj¹cych w jaki sposób ma zostaæ wyœwietlana przez przegl¹darkê internetow¹ zawartoœæ wybranego elementu (lub elementów) (X)HTML lub XML. Mo¿na w ten sposób opisaæ wszystkie pojêcia odpowiedzialne za prezentacjê elementów dokumentów internetowych, takie jak rodzina czcionek, kolor tekstu, marginesy, odstêp miêdzywierszowy lub nawet pozycja danego elementu wzglêdem innych elementów b¹dŸ okna przegl¹darki. Wykorzystanie arkuszy stylów daje znacznie wiêksze mo¿liwoœci pozycjonowania elementów na stronie, ni¿ oferuje sam (X)HTML.
+
+\textbf{Postgresql} jeden z najpopularniejszych wolnodostêpnych systemów zarz¹dzania relacyjnymi bazami danych. 
+
+
+\section{Modele, relacje i schematy}
+%tutaj wstawie to, tylko musze poszukac wszystkich tych diagramow co roblismy. Wtedy wstawie kod latexowski do umieszczania obrazkow, a Tobie przesle paczkê
+
+
+\section{Ewolucja systemu}
+
+Nie wiem co tutaj masz na myœli...
+Jak system bedzie siê rozwija³/zmienia³?
+Moim zdaniem nie ma potrzeby tego tutaj pisaæ bo sami siê wykopujemy, chyba ¿e zamierzasz rozwijaæ ten projekt w ramach dobrego serca :)
+\end{document} 
